@@ -8,8 +8,24 @@ return
 	},
 
 	-- Retrieves language servers (I installed them separately on Windows and Arch)
+
+	-- Python
 	vim.lsp.enable('pyright'),
+
+	-- Lua
 	vim.lsp.enable('lua_ls'),
+
+	-- Typescript
+	vim.lsp.enable('ts_ls'),
+
+	-- SASS
+	vim.lsp.enable('somesass_ls'),
+
+	-- CSS
+	vim.lsp.enable('cssls'),
+
+	-- HTML
+	vim.lsp.enable('html'),
 	vim.lsp.inline_completion.enable()
     },
     {
