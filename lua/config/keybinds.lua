@@ -1,5 +1,8 @@
 vim.g.mapleader = " "
+vim.g.maplocalleader = ","
 vim.keymap.set("n", "<leader>cd", vim.cmd.Ex)
 vim.keymap.set("n", "<leader>n", ":bnext<cr>")
 vim.keymap.set("n", "<leader>p", ":bprevious<cr>")
 vim.keymap.set("n", "<leader>d", ":bdelete<cr>")
+vim.keymap.set({ "n", "x" }, "<localleader>lt",
+  "<Plug>(MarkdownPlusToggleListPick)", { buffer = true })
